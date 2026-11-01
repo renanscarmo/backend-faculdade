@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aulas de Javascript</title>
+
+    <!-- 
+      Inserindo scripts no head o JS será interpretado e executado no carregamento da página antes dos elementos do HTML.      
+      O grande problema é que se os script forem muito grandes, pode deixar o carregamento da página lento e ocorrer um delay até exibir o HTML.
+    -->
+    <script>
+      console.log("Javascript executado no head.")
+    </script>
+  </head>
+  <body>
+    <script>
+      /*  
+        Não é recomendado para lógicas mais complexas. 
+        Mais utilizado para inserção de script de terceiros.
+      */
+      console.log("Javascript executado dentro do HTML no body.")
+    </script>
+
+    <!-- 
+      No fim do body você garante que o HTML apareça primeiro. 
+      Assim, o usuário já tem uma prévia da página enquanto finaliza o carregamento do script. 
+    -->
+    <script src="scripts.js"></script>
+  </body>
+</html>
