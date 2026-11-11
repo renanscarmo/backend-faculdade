@@ -15,6 +15,7 @@ console.dir(guest)
 const guestByClass = document.getElementsByClassName("guest")
 console.log(guestByClass)
 
+//exibir o primeiro elemento da lista
 console.log(guestByClass.item(0))
 console.log(guestByClass[1])
 
