@@ -1,6 +1,7 @@
 //aula Manipulando valor do input 
 const input = document.querySelector("input")
-const form = document.querySelector(form)
+const form = document.querySelector("form")
+/*
 input.addEventListener("input", () => {
   const value = input.value
   const regex = /\D+/g
@@ -11,9 +12,16 @@ input.addEventListener("input", () => {
   //const isValid = regex.test(value)
   //console.log(isValid)
   })
-
+ */
 form.addEventListener("submit", (event) =>{
   event.preventDefault()
-  const value = input.value 
-  console.log(value)
+  const regex = /\D+/g
+
+  if(regex.test(value)){
+    alert("Padrão  não encontrado")
+  }
+
+
+  /*const value = input.value.replace(regex, "")
+  console.log(value)*/
 })
